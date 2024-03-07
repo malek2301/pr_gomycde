@@ -1,0 +1,27 @@
+.page1 {
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover {
+    color: #3c434a;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fa-trash-can:hover {
+    color: red;
+}
+
+#contact {
+    height: 100vh;
+    background-color: aqua;
+}

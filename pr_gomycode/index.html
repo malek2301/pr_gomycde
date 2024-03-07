@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!------------------------------- Navbar------------------------------>
+
+    <nav
+      class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <i class="fa-solid fa-basket-shopping" style="color: #47e6cb; font-size: 26px; margin-right: 4px;"></i>
+        <a class="navbar-brand" href="#">K-Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="page1">
+
+    
+    <!---------------------------Total price ------------------------------------>
+
+    <div style="display: flex; justify-content: center">
+        <h3>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </h3>
+        <h3>Total Price: </h3>
+        <h2 style="margin-left: 4px;">  $</h2>
+        <h2 id="total-price">0</h2>
+    </div>
+
+
+    <!----------------------------------- Cards ---------------------------------->
+    <div class="cards">
+
+    <!----------------------------------- CARD 1 ---------------------------------->
+
+    <div class="card" style="width: 16rem;">
+        <img src="https://citymode.tn/48612-large_default/stan-smith.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">StanSmith</h5>
+          <p class="card-text">Adidas</p>
+
+          <div style="display: flex; ">
+            <h6>$</h6>
+            <h6 class="unit-price">80</h6>
+          </div>
+
+          <div style="display: flex; justify-content: center; align-items: center; font-size: 24px">
+            <i class="fa-solid fa-circle-plus"></i>
+            <span class="counter" style="margin: 0px 7px">0</span>
+            <i class="fa-solid fa-circle-minus"></i>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; font-size: 28px;">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+
+        </div>
+      </div>
+
+
+    <!----------------------------------- CARD 2 ---------------------------------->
+
+    <div class="card" style="width: 16rem;">
+        <img src="https://www.tuttosport.com.tn/18572-large_default/adidas-stan-smith.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">StanSmith</h5>
+          <p class="card-text">Adidas</p>
+
+          <div style="display: flex; ">
+            <h6>$</h6>
+            <h6 class="unit-price">100</h6>
+          </div>
+
+          <div style="display: flex; justify-content: center; align-items: center; font-size: 24px">
+            <i class="fa-solid fa-circle-plus"></i>
+            <span class="counter" style="margin: 0px 7px">0</span>
+            <i class="fa-solid fa-circle-minus"></i>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; font-size: 28px;">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+
+        </div>
+      </div>
+
+
+    <!----------------------------------- CARD 3 ---------------------------------->
+
+    <div class="card" style="width: 16rem;">
+        <img src="https://drest.s3.eu-west-3.amazonaws.com/wp-content/uploads/2023/08/15152951/adidas-stan-smith.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">StanSmith</h5>
+          <p class="card-text">Adidas</p>
+
+          <div style="display: flex; ">
+            <h6>$</h6>
+            <h6 class="unit-price">120</h6>
+          </div>
+
+          <div style="display: flex; justify-content: center; align-items: center; font-size: 24px">
+            <i class="fa-solid fa-circle-plus"></i>
+            <span class="counter" style="margin: 0px 7px">0</span>
+            <i class="fa-solid fa-circle-minus"></i>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; font-size: 28px;">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+</div>
+
+
+<div id="contact">
+
+</div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
